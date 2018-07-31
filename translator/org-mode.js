@@ -12,7 +12,7 @@
     "displayOptions": {
         "Alternate (@DoeTitle2000)": false
     },
-    "lastUpdated": "2018-07-30 07:03:17"
+    "lastUpdated": "2018-07-31 08:43"
 }
 
 function doExport () {
@@ -24,7 +24,7 @@ function doExport () {
         var n = str.lastIndexOf('/');
         var result = str.substring(n + 1);
         // [[zotero://select/items/1_WZKAZKJG][W2017SCC]
-        var url = '[[zotero://select/items/1_' + result + ']' + '[zotero]';
+        var url = '[[zotero://select/items/1_' + result + ']' + '[' + item.citekey + ']]';
         Zotero.write(url);
     }
 }
