@@ -24,7 +24,7 @@ function doExport () {
         var n = str.lastIndexOf('/');
         var result = str.substring(n + 1);
         // [[zotero://select/items/1_WZKAZKJG][W2017SCC]
-        var url = '[[zotero://select/items/1_' + result + ']' + '[' + item.citekey + ']]';
+        var url = '[[zotero://select/items/1_' + result + ']' + '[@' + item.citekey + ']]';
         Zotero.write(url);
     }
 }
